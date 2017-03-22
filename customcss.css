@@ -25,23 +25,17 @@ a:hover{
 .li_tr:hover{
   font-color:white;
 }
-
 .sliding_l_r{
   display: inline-block;
-  
 }
-
 .sliding_l_r:after{
   content:'';
   display:block;
   height: 2px;
   width: 0px;
   background-color: orange;
-
   transition: width 0.5s ease,background-color 2s ease;
-
 }
-  
 .sliding_l_r:hover:after{
   width: 100%;
   background-color: white;
@@ -124,19 +118,18 @@ li {
 }
 
 .btn-outline{
-  border-color: white;
+  border-color:white;
   border-style: solid;
   border-width: 2px;
   border-radius: 50%;
   width: 50%;
-  background-color:none;
+  
   transition:background-color 0.5s ease-in-out;
-
 }
+
 .btn-outline:hover{
-background-color:#fff;
+ //background-color: #fff;
 }
-
 .green-color{
   color:#58F02C;
 }
