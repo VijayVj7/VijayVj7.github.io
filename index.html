@@ -1,4 +1,4 @@
-
+<html>
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="customcss.css">
@@ -44,11 +44,12 @@
 <!-- Introduction -->
 
 <div class="page_one_remaining_body">
-  <div class="panel panel-default">
-    <div class="panel-body">Ever wonder, why movies are so popular? And everyone intends to be a part of it over the course of their life? Movies are not so different from our lives, with passion more than a life, with imagination hefty than reality.
+  <div class="body_about_us">
+    
+    <p id="about_us">Ever wonder, why movies are so popular? And everyone intends to be a part of it over the course of their life? Movies are not so different from our lives, with passion more than a life, with imagination hefty than reality.
 Hours of writing, days of making and years of acclaim for a moment of glory, which holds a place in the hearts of millions.
-For an instance, imagine if you know all the news and insights about films and t.v shows that you love and anticipate, before your neighbouring world knows. Isn`t it provoking, to know all the revelations about entertainment industry we love.
-</div>
+For an instance, imagine if you know all the news and insights about films and t.v shows that you love and anticipate, before your neighbouring world knows. Isn`t it provoking, to know all the revelations about entertainment industry we love.</p>
+
   </div>
 </div>
 
@@ -65,15 +66,20 @@ For an instance, imagine if you know all the news and insights about films and t
     </div>  
 </div> -->
 <div class="site-footer">
+    <button  onclick="document.getElementById('write-to-us').style.display='block' ">
+            Log in
+           </button>
     <div class="row">
-       <div class="col-lg-6 ">
+       <div class="col-lg-6">
     	   <p class ="contact-us">
     	    Want to give us any suggestions<span class="green-color">?</span>
-            <span><i class="fa fa-envelope-open" aria-hidden="true"></i></span></p>
+          <!--     <a onclick="opendlg()">
+            <span><i class="fa fa-envelope-open" aria-hidden="true" onclick="opendlg()"></i></span></a></p> -->
+           
     	   <p class="link-website" style="text-align: center;">agoodtreeproduction@gmail.com</p> 
        </div>
-       <div class="col-lg-6 box-2">
-           <h3 style="color: white; text-align: center;font-size: 30px;"> Around The Web</h3>
+       <div class="col-lg-6">
+           <p style="color: white; text-align: center;font-size: 30px;"> Around The Web</p>
            <ul class="list-inline">
            <li class="footer-elements">
     	      <a href="#" class=""><i class="fa fa-facebook btn-outline icon" aria-hidden="true"></i></a>
@@ -89,10 +95,40 @@ For an instance, imagine if you know all the news and insights about films and t
     	   </li>
     	  </ul>
        </div>
+       
     </div>
- </div>    
+    
+ </div>  
+ <div class="copyright">
+ 
+   </div> 
+   <!-- dialogue box--> 
+    <form>
+   <div id="write-to-us">
+      <div id="dlg-header"><p>Your Details</p></div>
+     <div id="dlg-body">   
+         <div class="form-group">
+             <label for="exampleInputName">Name</label>
+             <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Your Fucking Name">
+            <small id="emailHelp" class="form-text text-muted">
+             Let us know your name</small>
+         </div> 
+              
+       <div class="form-group">
+           <label for="exampleinputEmail">Email</label>
+           <input type="email" class="form-control" id="exampleInputMail" aria-describedby="emailHelp"
+            placeholder="Email id please !!">
+           <small id="emailHelp" class="form-text text-muted"> We'll neverreveal your mail id</small>
+       </div>
+         </div>
+      <div id="dlg-footer"><button type="button"  class="btn btn-primary">Submit</button></div>
+        
+      </div>
+    </form>
+   
 
  <script src="js/jquery-3.1.1.min.js"></script>
  <script src="script.js"></script>
-</body>
+    
+ </body>
 </html>
